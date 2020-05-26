@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chaset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribble</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="chat-widget" id="chat-widget" style="display: none;">
+            <div class="chat-header">
+                <div class="chat-header-logo">
+                    <div class="chat-header-avtar">
+                        <img src="https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png"
+                            width="40">
+                        <div class="dot"></div>
+                    </div>
+                    <div class="chat-header-titles">
+                        <span>John</span> <br>
+                        <div class="sub-title">
+                            <span>Agent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="close" onclick="onClose()">
+                    <img src="button.png">
+                </div>
+            </div>
+            <div class="chat-body">
+                <div class="messages">
+                    <div class="msg-container-user">
+                        <div class="user-img">
+                            <img src="https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png"
+                                width="30">
+                        </div>
+                        <div class="user-msg">
+                            <p>Hi there, How can i help you? 👋  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div class="chat-footer">
+                <div class="send-msg">
+                    <div class="form-group">
+                        <textarea autofocus class="message-input" type="text" placeholder="Type your message" class="form-control"
+                            id="exampleFormControlTextarea1" rows="1"></textarea>
+                        <div class="send" id="send">
+                            <img src="send.png" width="15">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="chat-bubble" id="chat-bubble">
+            <img class="img" src="speech.png" width="50">
+            <img src="cancel.png" width="50" style="display: none;">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
